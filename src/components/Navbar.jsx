@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FiMenu, FiX, FiShoppingCart } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
-import { useCart } from "../context/CartContext";
-
+import { useCart } from "../Context/CartContext";
+import logo from "../assets/Logo.png";
 const styles = {
   link: "text-sm font-medium text-white transition-all duration-200 lg:text-base hover:text-opacity-70 focus:text-opacity-70",
   mobileLink: "py-2 font-medium text-white transition-all duration-200 focus:text-opacity-70",
@@ -27,7 +27,7 @@ const Navbar = () => {
             <Link to="/" className="flex items-center" title="FoodWale">
               <img
                 className="w-auto h-8 lg:h-10 rounded-md"
-                src="https://play-lh.googleusercontent.com/Qg0_AaxXiHVAlNol6vw2c7sn8NdgA3OrW4AtjVHeXmObm0oEgAA3vfVAGjAWZB5xfng"
+                src={logo}
                 alt="FoodWale Logo"
                 height={200}
                 width={200}
